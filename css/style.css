@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    max-width: 1440px;
+    position: relative;
+}
+
+.top-bg{
+    background-image: url(../images/bg-pattern-top-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    left: -500px;
+}
+
+.bottom-bg{
+    background: url(../images/bg-pattern-bottom-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 60%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+main{
+    max-width: 1100px;
+    margin: auto;
+}
+.container{
+    margin: 50px 50px 0;
+    display:flex;
+    justify-content: space-between;
+    color: hsl(300, 43%, 22%);
+}
+
+.header p{
+    font-size: large;
+    margin-top: 10px;
+    width: 320px;
+}
+
+
+.rating{
+    background: hsl(300, 24%, 96%);
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.review{
+    margin-right: 50px;
+}
+
+.report{
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.BestTech{
+    margin-left: 80px;
+}
+
+.boxes{
+    margin: 20px 50px 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.box{
+    background: hsl(300, 43%, 22%);
+    padding: 30px 20px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.head{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box-img{
+    border-radius: 50%;
+}
+
+.para{
+    margin-left: 20px;
+}
+
+.para p{
+    color: hsl(333, 80%, 67%);
+    opacity: 0.8;
+}
+
+.box1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.box2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.box3{
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: purple;
+}
+
+a:hover{
+    color: rgb(225, 229, 233);
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: larger;
+}
+
+@media(max-width:1000px){
+    body{
+        max-width: 375px;
+        margin: auto;
+        position: relative;
+    }
+
+    .top-bg{
+        background-image: url(../images/bg-pattern-top-mobile.svg);
+        background-size: cover;
+        background-position: center;
+        height: 350px;
+        width: 100%;
+        position: absolute;
+        top: -120px;
+        left: 40px;
+    }
+
+    .bottom-bg{
+        background: url(../images/bg-pattern-bottom-mobile.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        top: 800px;
+        right: 0px;
+    }
+
+    .container{
+        margin: 0;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* max-width: 100%; */
+    }
+
+    .header{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .header p{
+        margin: 20px auto;
+    }
+
+    .rating{
+        gap: 5px;
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box{
+        margin-bottom:  0;
+    }
+
+    .boxes{
+        align-items: center;
+        justify-content: center;
+        /* margin: 0 ; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
